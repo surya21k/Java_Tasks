@@ -3,7 +3,7 @@ public class RMS {
     public RMS(int choice){
         this.choice = choice;
     }
-    public void checkMenu(){
+    public void Menu(){
         switch (choice) {
             case 1:
                 System.out.println("You Selected : Pizza");

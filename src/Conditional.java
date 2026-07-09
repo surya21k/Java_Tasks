@@ -13,7 +13,7 @@ public class Conditional {
 
     }
     public static void Restaurant(){
-        System.out.println("--------------Welcome To RMS Restaurant------------");
+        System.out.println("-------------Welcome To RMS Restaurant-----------");
         System.out.println("**** MENU ****");
         System.out.println("1. Pizza - ₹250");
         System.out.println("2. Burger - ₹150");
@@ -23,7 +23,7 @@ public class Conditional {
         System.out.print("Enter Your Choice : ");
         int choice = scanner.nextInt();
         RMS rms = new RMS(choice);
-        rms.checkMenu();
+        rms.Menu();
     }
     public static void empSalary(){
         System.out.print("Enter Employee salary: ");
@@ -31,7 +31,7 @@ public class Conditional {
         System.out.println("Salary: " + sal);
         EBC ebc = new EBC(sal);
         ebc.checkBonus();
-        ebc.checkTotalSalary();
+        ebc.totalSalary();
     }
     public static void atmMoney(){
         System.out.print("Enter Account Balance: ");
@@ -39,14 +39,14 @@ public class Conditional {
         System.out.print("Enter Withdrawal Amount :");
         int wit = scanner.nextInt();
         ATM atm = new ATM(amo,wit);
-        atm.withDraw();
+        atm.withDrawMoney();
         atm.balanceAmount();
     }
     public static void billAmount(){
         System.out.print("Original bill: ");
         int val = scanner.nextInt();
         EBD bill = new EBD(val);
-        bill.checkDiscount();
+        bill.Discount();
 
     }
 

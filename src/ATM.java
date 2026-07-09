@@ -8,7 +8,7 @@ public class ATM {
         this.amount = amount;
         this.withDrawAmount = withDrawAmount;
     }
-    public void withDraw(){
+    public void withDrawMoney(){
         if(amount > 0 && amount > withDrawAmount){
             amount -= withDrawAmount;
             System.out.println("Transaction Successful");

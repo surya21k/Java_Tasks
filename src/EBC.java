@@ -21,7 +21,7 @@ public class EBC {
         }
         System.out.println("Bonus: " + bonus);
     }
-    public void checkTotalSalary(){
+    public void totalSalary(){
         totalSalary = salary + bonus;
         System.out.println("totalSalary = " + totalSalary);
     }

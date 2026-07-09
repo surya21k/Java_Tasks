@@ -7,7 +7,7 @@ public class EBD {
     public EBD(int originalBill){
        this.originalBill = originalBill;
     }
-    void checkDiscount(){
+    void Discount(){
         if (originalBill > 5000){
             discount = originalBill * 20 / 100 ;
             System.out.println("discount: "+discount);
