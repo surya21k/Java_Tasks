@@ -6,24 +6,10 @@ public class Conditional {
         System.out.println();
         empSalary();
         System.out.println();
-        Restaurant();
-        System.out.println();
         atmMoney();
+        System.out.println();
+        loginAuth();
 
-
-    }
-    public static void Restaurant(){
-        System.out.println("-------------Welcome To RMS Restaurant-----------");
-        System.out.println("**** MENU ****");
-        System.out.println("1. Pizza - ₹250");
-        System.out.println("2. Burger - ₹150");
-        System.out.println("3. Sandwich - ₹120");
-        System.out.println("4. Coffee - ₹80");
-        System.out.println("5. Exit");
-        System.out.print("Enter Your Choice : ");
-        int choice = scanner.nextInt();
-        RMS rms = new RMS(choice);
-        rms.Menu();
     }
     public static void empSalary(){
         System.out.print("Enter Employee salary: ");
@@ -49,5 +35,19 @@ public class Conditional {
         bill.Discount();
 
     }
+    public static void loginAuth(){
+        System.out.print("Username  = ");
+        String user = scanner.nextLine();
+        System.out.print("Password = ");
+        String user1 = scanner.nextLine();
+        loginAuthentication Auth = new loginAuthentication();
+        Auth.setUserName("admin");
+        Auth.setPassword("1234");
+        if (Auth.authenticate(user, user1)) {
+            System.out.println("Login Successful.");
+        } else {
+            System.out.println("Invalid Username or Password.");
+        }
 
+    }
 }
