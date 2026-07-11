@@ -2,9 +2,9 @@ import java.util.Scanner;
 public class SwitchMain {
     static Scanner scanner = new Scanner(System.in);
     public static void main() {
-//        SGC();
-//        electricityBill();
-//        calculator();
+        SGC();
+        electricityBill();
+        calculator();
         Restaurant();
 
     }
